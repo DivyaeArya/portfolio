@@ -20,14 +20,25 @@ const ViewProjectArrowIcon = () => (
   </svg>
 );
 
-// Work Item Component (New)
-function WorkItem({ project }) {
+import React from "react";
+
+// 1. Define the interface for the project prop
+interface WorkItemProject {
+  title: string;
+  description: string;
+  imageUrl: string;
+  bullets: string[];
+  link: string;
+}
+
+// 2. Add the type annotation to the prop
+function WorkItem({ project }: { project: WorkItemProject }) {
   const { title, description, imageUrl, bullets, link } = project;
 
   return (
-    <a 
-      href={link} 
-      target="_blank" 
+    <a
+      href={link}
+      target="_blank"
       rel="noopener noreferrer"
       className="group relative block w-full bg-neutral-900 overflow-hidden"
     >
@@ -35,11 +46,17 @@ function WorkItem({ project }) {
       <div className="relative w-full transition-opacity duration-500 ease-in-out group-hover:opacity-0">
         {/* Image Area */}
         <div className="w-full h-80 bg-neutral-800">
-          <img 
-            src={imageUrl} 
-            alt={title} 
+          <img
+            src={imageUrl}
+            alt={title}
             className="w-full h-full object-cover"
-            onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/600x400/333/FFF?text=Project+Image"; }}
+            onError={(e) => {
+              // Fix TypeScript: cast target to HTMLImageElement
+              const target = e.target as HTMLImageElement;
+              target.onerror = null;
+              target.src =
+                "https://placehold.co/600x400/333/FFF?text=Project+Image";
+            }}
           />
         </div>
         {/* Text Area */}
@@ -54,16 +71,17 @@ function WorkItem({ project }) {
       </div>
 
       {/* 2. Hover State Content */}
-      <div className="absolute inset-0 w-full h-full p-6
-                      flex flex-col justify-between
-                      bg-black/80 backdrop-blur-sm
-                      opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
+      <div
+        className="absolute inset-0 w-full h-full p-6
+                  flex flex-col justify-between
+                  bg-black/80 backdrop-blur-sm
+                  opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
       >
         {/* Top Arrow */}
         <div className="w-full flex justify-end">
           <ViewProjectArrowIcon />
         </div>
-        
+
         {/* Bottom Text */}
         <div>
           <h3 className="text-3xl font-bold text-white mb-4">{title}</h3>
