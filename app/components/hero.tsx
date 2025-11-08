@@ -5,7 +5,7 @@ function Hero() {
       {/* Intro Section */}
       <div className="flex items-center space-x-4 mb-12">
         <img
-          src="\headshot.jpg"
+          src="headshot.jpg"
           alt="Divyae Arya"
           className="w-20 h-20 rounded-full border-2 border-gray-700 object-cover"
         />

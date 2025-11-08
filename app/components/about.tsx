@@ -59,7 +59,7 @@ function AboutSection() {
         {/* Left Column (Text) */}
         <div className="md:sticky md:top-32">
           <p className="text-2xl text-gray-200 leading-relaxed">
-            First-year CS student at IIT Indore. Driven by a passion for understanding the world on a deeper level. This has drawn me to the elegance of mathematics and the challenge of foundational research. I love exploring complex concepts, asking "why," and connecting ideas across different fields, from theoretical computer science to the patterns that shape our world.
+            Second-year CS student at IIT Indore. Driven by a passion for understanding the world on a deeper level. This has drawn me to the elegance of mathematics and the challenge of foundational research. I love exploring complex concepts, asking "why," and connecting ideas across different fields, from theoretical computer science to the patterns that shape our world.
           </p>
 
           {/* --- LINKS RE-ADDED WITH FINAL ANIMATION --- */}
