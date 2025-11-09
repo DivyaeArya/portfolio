@@ -37,7 +37,6 @@ const LinkArrowIcon = () => (
   </svg>
 );
 
-// About Section Component
 function AboutSection() {
   return (
     <section id="about" className="container mx-auto max-w-7xl px-6 py-16">
@@ -58,6 +57,8 @@ function AboutSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         {/* Left Column (Text) */}
         <div className="md:sticky md:top-32">
+        <h2 className="text-5xl font-bold text-white mb-12"> <span className="text-green-400">01</span> / About</h2>
+
           <p className="text-2xl text-gray-200 leading-relaxed">
             Second-year CS student at IIT Indore. Driven by a passion for understanding the world on a deeper level. This has drawn me to the elegance of mathematics and the challenge of foundational research. I love exploring complex concepts, asking "why," and connecting ideas across different fields, from theoretical computer science to the patterns that shape our world.
           </p>
@@ -66,7 +67,7 @@ function AboutSection() {
           <div className="mt-10 space-y-4">
             {/* Download Resume Link */}
             <a
-              href="#resume-link" // Placeholder for resume link
+              href="https://drive.google.com/file/d/1iac7zizr1OeD0j46Mkv3AR6F5ZlRa3Ct/view?usp=sharing" target="_blank"
               className="group relative inline-flex items-center text-xl font-medium text-gray-200 hover:text-white transition-colors duration-200 overflow-hidden"
               style={{ height: '1.5em' }} // Set fixed height to contain the flip
             >
@@ -82,7 +83,7 @@ function AboutSection() {
 
             {/* LinkedIn Link */}
             <a
-              href="https://www.linkedin.com/in/divyae-arya-9788b3332/" // Placeholder for LinkedIn link
+              href="https://www.linkedin.com/in/divyae-arya-9788b3332/" target="_blank"
               className="group relative inline-flex items-center text-xl font-medium text-gray-200 hover:text-white transition-colors duration-200 overflow-hidden"
               style={{ height: '1.5em' }} // Set fixed height
             >
@@ -102,27 +103,27 @@ function AboutSection() {
         <div className="relative h-[600px] md:h-auto md:min-h-[800px]">
           {/* Using relative/absolute positioning to mimic the collage. */}
           <img
-            src="https://placehold.co/300x200/333333/FFFFFF?text=Image+1"
+            src="maths.jpg"
             alt="Collage image 1"
-            className="w-[300px] h-[200px] object-cover rounded-lg absolute top-0 left-0 rotate-[-8deg] border-4 border-black"
+            className="w-[300px] h-[250px] object-cover rounded-lg absolute top-0 left-0 rotate-[-8deg] border-4 border-black"
           />
           <img
-            src="https://placehold.co/350x250/333333/FFFFFF?text=Image+2"
+            src="back.jpg"
             alt="Collage image 2"
-            className="w-[350px] h-[250px] object-cover rounded-lg absolute top-40 left-20 rotate-[5deg] z-10 border-4 border-black"
+            className="w-[350px] h-[280px] object-cover rounded-lg absolute top-40 left-20 rotate-[5deg] z-10 border-4 border-black"
           />
           <img
-            src="https://placehold.co/250x350/333333/FFFFFF?text=Image+3"
+            src="kruta.jpg"
             alt="Collage image 3"
             className="w-[250px] h-[350px] object-cover rounded-lg absolute top-10 right-0 rotate-[10deg] border-4 border-black"
           />
           <img
-            src="https://placehold.co/280x200/333333/FFFFFF?text=Image+4"
+            src="coffee.jpg"
             alt="Collage image 4"
-            className="w-[280px] h-[200px] object-cover rounded-lg absolute top-[350px] right-5 rotate-[-5deg] z-20 border-4 border-black"
+            className="w-[280px] h-[300px] object-cover rounded-lg absolute top-[350px] right-5 rotate-[-5deg] z-20 border-4 border-black"
           />
            <img
-            src="https://placehold.co/300x300/333333/FFFFFF?text=Image+5"
+            src="code3.jpg"
             alt="Collage image 5"
             className="w-[300px] h-[300px] object-cover rounded-lg absolute top-[450px] left-10 rotate-[3deg] z-10 border-4 border-black"
           />

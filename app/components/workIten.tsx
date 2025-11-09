@@ -40,12 +40,12 @@ function WorkItem({ project }: { project: WorkItemProject }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative block w-full bg-neutral-900 overflow-hidden"
+      className="group relative block w-full bg-neutral-900 overflow-hidden rounded-2xl"
     >
       {/* 1. Default State Content */}
       <div className="relative w-full transition-opacity duration-500 ease-in-out group-hover:opacity-0">
         {/* Image Area */}
-        <div className="w-full h-80 bg-neutral-800">
+        <div className="w-full h-64 bg-neutral-800 rounded-t-2xl">
           <img
             src={imageUrl}
             alt={title}

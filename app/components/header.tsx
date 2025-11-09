@@ -2,7 +2,7 @@ import ArrowUpRight  from './arrow';
 
 function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-10 bg-black bg-opacity-80 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-80 backdrop-blur-sm">
       <nav className="container mx-auto max-w-7xl px-6 py-5 flex justify-between items-center">
         {/* User Name */}
         <a href="#" className="text-lg font-medium text-gray-100 hover:text-white transition-colors">
@@ -11,6 +11,9 @@ function Header() {
         
         {/* Navigation Links */}
         <div className="hidden md:flex items-center space-x-6">
+          <a href="#skills" className="text-gray-300 hover:text-white transition-colors">
+            Skills
+          </a>
           <a href="#work" className="text-gray-300 hover:text-white transition-colors">
             Projects
           </a>

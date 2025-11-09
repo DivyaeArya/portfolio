@@ -4,6 +4,8 @@ import Header from './components/header';
 import Hero from './components/hero';
 import WorkSection from './components/work';
 import AboutSection from './components/about';
+import SkillsSection from './components/skills';
+import ContactSection from './components/contact';
 
 // Main App Component
 export default function App() {
@@ -21,7 +23,8 @@ export default function App() {
         <Hero />
         <AboutSection />
         <WorkSection />
-
+        <SkillsSection />
+        <ContactSection />
       </main>
     </div>
   );
