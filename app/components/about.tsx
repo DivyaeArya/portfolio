@@ -100,7 +100,7 @@ function AboutSection() {
         </div>
 
         {/* Right Column (Image Collage) */}
-        <div className="relative h-[600px] md:h-auto md:min-h-[800px]">
+        <div className="hidden md:block relative h-[600px] md:h-auto md:min-h-[800px]">
           {/* Using relative/absolute positioning to mimic the collage. */}
           <img
             src="maths.jpg"
